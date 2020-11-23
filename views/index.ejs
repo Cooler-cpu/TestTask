@@ -1,0 +1,300 @@
+<html><head>
+    
+    <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .container{
+        display: flex;
+        max-width: 1200px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .block3{
+        height: 50px;
+    }
+
+    .block_content{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 7px;
+        font-size: 11px;
+    }
+
+    .block_heading{
+        color: red;
+        margin-left: 20%;
+        margin-bottom: 8px;
+    }
+
+    .radioButton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .block_input_heading{
+        width: 56px;
+        color: blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 5px;
+    }
+
+    .block_input_content{
+        display: flex;
+        margin-bottom: 7px;
+    }
+
+    .input_number{
+        width: 45px;
+        height: 30px;
+        text-align: center;
+    }
+
+    .container_section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button{
+        margin-top: 20px;
+        width: 150px;
+        height: 20px;
+    }
+
+    @media only screen and (max-width: 500px)
+    {   
+        .container_section{
+            flex-direction: column;
+        }
+    }
+
+    @media only screen and (max-width: 400px)
+    { 
+        .block_content{
+            font-size: 9px;
+        }
+    }
+
+
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="container_section">
+                <div class="block1 block">
+                    <div class="block_heading">
+                        <p>Заслонка</p>
+                    </div>
+                    <div class="block_content">
+
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                <p>
+                                    Управление
+                                </p>
+                            </div>
+                            
+                            <form class="radioButton">
+                                <label><input type="radio" id="r1" name="controller1" value="Дискретное">Дискретное</label>
+                                <label><input type="radio" id="r2" name="controller1" value="Аналоговое">Аналоговое</label>
+                            </form>
+                        
+                        </div>
+                    </div>
+
+                    <div class="block_content">
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                Контроль<br> открытия
+                            </div>     
+                            <form class="radioButton">
+                                <label><input type="radio" id="r3" name="controller2" value="нет">нет</label>
+                                <label><input type="radio" id="r4" name="controller2" value="есть">есть</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /block1 -->
+
+                <div class="block2 block">
+                    <div class="block_heading">
+                        <p>Фильтра</p>
+                    </div>
+
+                    <div class="block_content">
+
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                <p>
+                                    Управление
+                                </p>
+                            </div>
+                            
+                            <form class="radioButton">
+                                <label><input class="input_number" id="input1" type="number" min="1" value="1"> шт</label>
+                            </form>
+                        
+                        </div>
+                    </div>
+
+                    <div class="block_content">
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                Контроль<br> открытия
+                            </div>     
+                            <form class="radioButton">
+                                <label><input type="radio" id="r5" name="controller3" value="нет">нет</label>
+                                <label><input type="radio" id="r6" name="controller3" value="есть">есть</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block3 block">
+                    <div class="block_heading">
+                        <p>Нагреватель</p>
+                    </div>
+                    <div class="block_content">
+
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                <p>
+                                    Тип
+                                </p>
+                            </div>
+                            
+                            <form class="radioButton">
+                                <label><input type="radio" id="r7" name="controller4" value="водяной">Водяной</label>
+                                <label><input type="radio" id="r8"  name="controller4" value="электрический">Электрический</label>
+                            </form>
+                        
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <div class="block4 block">
+                    <div class="block_heading">
+                        <p>Охладитель</p>
+                    </div>
+
+                    <div class="block_content">
+
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                <p>
+                                    Тип
+                                </p>
+                            </div>
+                            
+                            <form class="radioButton">
+                                <label><input type="radio" id="r9" name="controller4" value="нет">Нет</label>
+                                <label><input type="radio" id="r10" name="controller4" value="водяной">Водяной</label>
+                                <label><input type="radio" id="r11" name="controller4" value="фреоновый">Фреоновый</label>
+                            </form>
+                        
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> 
+            <!-- // первая колонка -->
+
+
+            <div class="container_section">
+                <div class="block5 block">
+                    <div class="block_heading">
+                        <p>Вентилятор</p>
+                    </div>
+                    <div class="block_content">
+
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                <p>
+                                    Мощность
+                                </p>
+                            </div>
+                            
+                            <form class="radioButton">
+                                <label><input class="input_number" id="input2" type="number" step="0.1" min="0" value="0" placeholder="0,0"> кВт </label>
+                            </form>
+                        
+                        </div>
+                    </div>
+
+                    <div class="block_content">
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                Управление
+                            </div>     
+                            <form class="radioButton">
+                                <label><input type="radio" id="r12" name="controller5" value="прямой пуск">Прямой пуск</label>
+                                <label><input type="radio" id="r13" name="controller5" value="преобразовтель частоты">Преобразователь частоты</label>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="block6 block">
+                    <div class="block_heading">
+                        <p>Общие</p>
+                    </div>
+
+                    <div class="block_content">
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                Корпус
+                            </div>     
+                            <form class="radioButton">
+                                <label><input type="radio" id="r14"name="controller6" value="пластик">Пластик</label>
+                                <label><input type="radio" id="r15" name="controller6" value="метал"">Металл</label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="block_content">
+                        <div class="block_input_content">
+                            <div class="block_input_heading">
+                                Доп. опции
+                            </div>
+                            <form class="radioButton">
+                                <label><input type="checkbox" id="check1" name="option" value="сигнал пожар">Сигнал Пожар</label>
+                                <label><input type="checkbox" id="check2" name="option" value="led-индекация">Led-индекация</label>
+                                <label><input type="checkbox" id="check3" name="option" value="диспечирезация">Диспечирезация</label>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <input type="button" class="button" onclick="dataSetter()" value="Отправить данные">
+        </div>
+    </body>
+    <script src="/scripts/client.js"></script>
+</html>
